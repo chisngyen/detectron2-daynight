@@ -58,6 +58,3 @@ image_name class_id x_center y_center width height confidence
 - Đường dẫn trong Windows cần đặt trong dấu ngoặc kép nếu có dấu cách
 - Cần có NVIDIA GPU và driver phù hợp
 - Container cần quyền đọc/ghi vào thư mục được mount
-
-## Support
-Nếu gặp vấn đề, vui lòng tạo issue hoặc liên hệ: [your-contact]
