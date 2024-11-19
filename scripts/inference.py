@@ -93,13 +93,13 @@ def main():
     # Thiết lập predictors
     cfg_day = get_cfg()
     cfg_day.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
-    cfg_day.MODEL.WEIGHTS = "/app/models/best_day.pth"
+    cfg_day.MODEL.WEIGHTS = "/app/models/day_model.pth"
     cfg_day.MODEL.ROI_HEADS.NUM_CLASSES = 4
     predictor_day = DefaultPredictor(cfg_day)
 
     cfg_night = get_cfg()
     cfg_night.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"))
-    cfg_night.MODEL.WEIGHTS = "/app/models/best_night.pth"
+    cfg_night.MODEL.WEIGHTS = "/app/models/night_model.pth"
     cfg_night.MODEL.ROI_HEADS.NUM_CLASSES = 4
     predictor_night = DefaultPredictor(cfg_night)
 
