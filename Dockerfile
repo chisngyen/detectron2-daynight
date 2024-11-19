@@ -35,8 +35,8 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 # Copy model weights và code
-COPY models/best_day.pth /app/models/best_day.pth
-COPY models/best_night.pth /app/models/best_night.pth
+COPY models/day_model.pth /app/models/day_model.pth
+COPY models/night_model.pth /app/models/night_model.pth
 COPY inference.py /app/inference.py
 
 # Command mặc định khi chạy container
